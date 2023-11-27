@@ -1,0 +1,64 @@
+<!--Copyright Benjamin Adam Catching March 2020-->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Adam Catching</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+</head>
+<body>
+   <!-- Navigation -->
+  <nav class="w3-bar w3-black">
+    <a href="index.html" class="w3-button w3-bar-item">Home</a>
+    <a href="media.html" class="w3-button w3-bar-item">Media</a>
+      
+    <a href="publications.html" class="w3-button w3-bar-item">Publications</a>
+    <a href="contact.html" class="w3-button w3-bar-item">Contact</a>
+    <a href='CV.html' class="w3-button w3-bar-item">CV</a>
+  </nav> 
+  <!-- Slide Show -->
+  <section>
+    <img class="mySlides" src="EV71_microscopy.png" style="width:100%">
+    <img class="mySlides" src="EV71_4643_structure.png" style="width:100%">
+    <img class="mySlides" src="EV71_4643_heated.jpg" style="width:100%">
+  </section> 
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 7000);
+}
+</script>
+    <h1>Simulation from paper <a href="https://www.nature.com/articles/s41598-021-94960-5">Examining the interplay between face mask usage, asymptomatic transmission, and social distancing on the spread of COVID-19</a>
+    <h3>No social distancing</h3>
+    <video class="tab" width="640" height="360" controls>Your browser does not support the &lt;video&gt; tag.
+      <source src="http://adamcatching.com/movie_1.mp4"/>
+    </video>
+
+    <h3>With social distancing</h3>
+    <video class="tab" width="640" height="360" controls>Your browser does not support the &lt;video&gt; tag.
+      <source src="http://adamcatching.com/movie_2.mp4"/>
+    </video>
+
+
+   <h1>UCSF Alumni Weekend 2021 Award Ceremony</h1>
+   <iframe src="https://player.vimeo.com/video/540308943?h=cad790410b&color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/540308943">2021 UCSF Alumni Achievement Awards Show</a> from <a href="https://vimeo.com/ucsfthecampaign">UCSF Foundation</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+
+   <h1>UCSF Student Life during the COVID-19 Pandemic</h1>
+    <iframe width="600" height="350" 
+    src="https://www.youtube.com/embed/SK8gVnrSpSk">
+  </iframe>
+</body>
+</html>
