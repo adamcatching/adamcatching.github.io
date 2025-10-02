@@ -26,42 +26,11 @@
 </style>
 </head>
 <body>
-   <!-- Navigation -->
-  <nav class="w3-bar w3-black">
-    <a href="index.html" class="w3-button w3-bar-item">Home</a>
-    <a href="media.html" class="w3-button w3-bar-item">Media</a>
-      
-    <a href="publications.html" class="w3-button w3-bar-item">Publications</a>
-    <a href="contact.html" class="w3-button w3-bar-item">Contact</a>
-    <a href='BAC_CV.pdf' class="w3-button w3-bar-item">CV</a>
-  </nav> 
-  <!-- Slide Show -->
-  <section>
-    <img class="mySlides" src="EV71_microscopy.png" style="width:100%">
-    <img class="mySlides" src="EV71_4643_structure.png" style="width:100%">
-    <img class="mySlides" src="EV71_4643_heated.jpg" style="width:100%">
-  </section> 
-<script>
-// Automatic Slideshow - change image every 3 seconds
-var myIndex = 0;
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 7000);
-}
-</script>
 <h2> Contact</h2>
  <div class="row">
   <div class="column">
-    <img src="self.jpg" alt="Myself" style="width:40%">
+    <img src="images/self.jpg" alt="Myself" style="width:50%">
   </div>
   <div class="column">
     <h3>Benjamin Adam Catching</h3>
@@ -75,6 +44,14 @@ function carousel() {
     </p>
   </div>
 </div> 
+   <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+    <a href="https://github.com/adamcatching"><i class="fa fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/adam-catching/"><i class="fa fa-linkedin-square"></i></a>
+    <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=zsUfvpcAAAAJ"> <i class="fa fa-google"></iclass></i></a>
+    <a href='https://www.instagram.com/picovirusphysics/'><i class="fa fa-instagram"></i></a>
+    <a href="https://bsky.app/profile/adamcatching.bsky.social"><i class="fa fa-users"></i></a>
+  </footer> 
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
-<img class="mySelf" src="self.jpg" style="width:10%">
