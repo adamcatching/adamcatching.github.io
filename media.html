@@ -16,29 +16,7 @@
     <a href="contact.html" class="w3-button w3-bar-item">Contact</a>
     <a href='BAC_CV.pdf' class="w3-button w3-bar-item">CV</a>
   </nav> 
-  <!-- Slide Show -->
-  <section>
-    <img class="mySlides" src="EV71_microscopy.png" style="width:100%">
-    <img class="mySlides" src="EV71_4643_structure.png" style="width:100%">
-    <img class="mySlides" src="EV71_4643_heated.jpg" style="width:100%">
-  </section> 
-<script>
-// Automatic Slideshow - change image every 3 seconds
-var myIndex = 0;
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 7000);
-}
-</script>
     <h1>Simulation from paper <a href="https://www.nature.com/articles/s41598-021-94960-5">Examining the interplay between face mask usage, asymptomatic transmission, and social distancing on the spread of COVID-19</a>
     <h3>No social distancing</h3>
     <video class="tab" width="640" height="360" controls>Your browser does not support the &lt;video&gt; tag.
